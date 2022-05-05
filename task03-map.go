@@ -4,9 +4,8 @@ import (
 	"sort"
 )
 
-func sortMapValues(input map[int]string) []string {
+func sortMapValues(input map[int]string) (result []string) {
 	var keys []int
-	var result []string
 
 	for k, _ := range input {
 		keys = append(keys, k)
@@ -18,5 +17,5 @@ func sortMapValues(input map[int]string) []string {
 		result = append(result, input[v])
 	}
 
-	return result
+	return
 }
