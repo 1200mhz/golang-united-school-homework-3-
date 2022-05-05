@@ -8,7 +8,7 @@ import (
 
 func TestReverse(t *testing.T) {
 	slice := []int64{4, 8, 2, 1, 4, 88}
-	expected := []int64{88, 8, 4, 4, 2, 1}
+	expected := []int64{88, 4, 1, 2, 8, 4}
 
 	actual := reverse(slice)
 

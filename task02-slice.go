@@ -1,16 +1,15 @@
 package homework
 
-import "sort"
-
 type int64Slice []int64
 
-func reverse(input []int64) []int64 {
-	res := int64Slice{}
-	res = input
+func reverse(input []int64) (result []int64) {
+	//var result []int64
 
-	sort.Sort(sort.Reverse(&res))
+	for i := 0; i < len(input); i++ {
+		result = append(result, input[len(input)-i-1])
+	}
 
-	return res
+	return
 }
 
 func (s *int64Slice) Len() int {
